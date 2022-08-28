@@ -22,7 +22,6 @@ const QuoteBox = () =>{
     return(
     <div className="quoteBox">
         <QuoteAndAuthor updater= {updater}/>
-        
         <button onClick={changeStateUpdater}> &gt; </button>
     </div>
     );
