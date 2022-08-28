@@ -2,40 +2,102 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+
+  --white: rgb(235, 235, 235);
+}
+
+.QuoteBox {
+  background-color: var(--white);
+  width: 42vw;
+  height: 38vh;
+  border-radius: 6px;
+
+  box-shadow: 4px 4px 4px rgb(66, 66, 66);
+  padding: 2vh 2.5vw;
+  
+  display: grid;
+  grid-template: 
+  'quoteMark quote'
+  '. button';
+  gap: 10px;
+
+  align-items: center;
+}
+
+.quotationMarks{
+  grid-area: quoteMark;
+  padding: 0;
+  font-size: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.QuoteAndAuthor{
+  grid-area: quote;
+  justify-self: end;
+
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+
+  font-size: 1.5vw;
+
+  display: grid;
+  width: 35vw;
+  height: 24vh;
+
+  grid-template: 
+  'quote'  
+  'author';
+}
+
+.QuoteAndAuthor p {
+  margin: 0;
+  padding: 0;
+
+  grid-area: quote;
   text-align: center;
+  width: 95%;
+  height: 17vh;
+  max-height: 17vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.QuoteAndAuthor footer{
+  grid-area: author;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-QuoteBox{
+  grid-area: button;
+  justify-self: end;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3.5vw;
+  width: 3.5vw;
+
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(66, 66, 66);
+
+  color: var(--white);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vw;
+  user-select: none;
+
+  cursor:pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.button-QuoteBox:active{
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 1px rgb(66, 66, 66);
 }

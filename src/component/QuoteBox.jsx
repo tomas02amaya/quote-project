@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 import RandIn from '../assets/RandIn';
 import QuoteAndAuthor from "./QuoteAndAuthor";
 
-import colorList from '../json/colorList.json'
-
+import colorList from '../json/colorList.json';
 
 const QuoteBox = () =>{
     let [updater, setUpdater] = useState(true);
@@ -13,16 +12,19 @@ const QuoteBox = () =>{
     
     const randColor = () => {
         let color = RandIn(colorList);
-        document.querySelector('body, .QuoteAndAuthor').style.background = color;
-        document.querySelector('blockquote').style.color = color;
+        document.querySelector('body, .QuoteAndAuthor ').style.background = color;
+        document.querySelector('blockquote, quotationMarks').style.color = color;
+        document.querySelector('.button-QuoteBox').style.background = color;
+        document.querySelector('.quotationMarks').style.color = color;
     };
 
     useEffect(randColor,[updater]);
 
     return(
-    <div className="quoteBox">
+    <div className="QuoteBox">
+        <span className='quotationMarks'>“</span>
         <QuoteAndAuthor updater= {updater}/>
-        <button onClick={changeStateUpdater}> &gt; </button>
+        <div className="button-QuoteBox" onClick={changeStateUpdater}> &gt; </div>
     </div>
     );
 }
