@@ -19,7 +19,7 @@
   grid-template: 
   'quoteMark quote'
   '. button';
-  gap: 10px;
+  gap: 5px;
 
   align-items: center;
 }
@@ -37,7 +37,6 @@
   grid-area: quote;
   justify-self: end;
 
-  background-color: aliceblue;
   margin: 0;
   padding: 0;
 

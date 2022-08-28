@@ -11,7 +11,7 @@ const QuoteBox = () =>{
     const changeStateUpdater = () =>{setUpdater(!updater)}    
     
     const randColor = () => {
-        let color = RandIn(colorList);
+        let color = RandIn(colorList); //RandIn(colorList);
         document.querySelector('body, .QuoteAndAuthor ').style.background = color;
         document.querySelector('blockquote, quotationMarks').style.color = color;
         document.querySelector('.button-QuoteBox').style.background = color;
