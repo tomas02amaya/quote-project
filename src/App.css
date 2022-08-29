@@ -12,7 +12,7 @@
   height: 38vh;
   border-radius: 6px;
 
-  box-shadow: 4px 4px 4px rgb(66, 66, 66)
+  box-shadow: 4px 4px 4px rgb(66, 66, 66),
               -4px -4px 4px rgb(235, 235, 235);
   padding: 2vh 2.5vw;
   
