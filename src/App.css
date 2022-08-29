@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
 
-  --white: rgb(235, 235, 235);
+  --white: rgb(228, 225, 216);
 }
 
 .QuoteBox {
@@ -12,8 +12,8 @@
   height: 38vh;
   border-radius: 6px;
 
-  box-shadow: 4px 4px 4px rgb(66, 66, 66),
-              -4px -4px 4px rgb(235, 235, 235);
+  box-shadow: 15px 20px 20px rgb(30, 30, 34),
+              -15px -15px 15px rgb(223, 223, 223);
   padding: 2vh 2.5vw;
   
   display: grid;
